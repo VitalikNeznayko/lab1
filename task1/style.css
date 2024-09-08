@@ -3,12 +3,14 @@ input[type="radio"] {
 }
 
 label {
+  width: 300px;
   color: white;
   display: block;
   padding: 10px;
   background-color: #2d2d2d;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  border: 1px solid #2d2d2d;
 }
 
 label:hover {
@@ -16,13 +18,12 @@ label:hover {
 }
 
 label + div {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.3s ease;
+  width: 300px;
+  display: none;
   border: 1px solid #ccc;
 }
 
 input[type="radio"]:checked + label + div {
-  max-height: 200px;
+  display: block;
   padding: 10px;
 }

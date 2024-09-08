@@ -1,0 +1,28 @@
+input[type="radio"] {
+  display: none;
+}
+
+label {
+  color: white;
+  display: block;
+  padding: 10px;
+  background-color: #2d2d2d;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+label:hover {
+  background-color: #878787;
+}
+
+label + div {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  border: 1px solid #ccc;
+}
+
+input[type="radio"]:checked + label + div {
+  max-height: 200px;
+  padding: 10px;
+}

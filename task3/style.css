@@ -22,8 +22,7 @@ ul {
       }
       li:hover {
         background-color: rgb(246, 245, 245);
-      }
-    }
+      }}
   }
   ul + ul {
     margin-top: 3px;
@@ -33,7 +32,6 @@ ul {
 ul + ul {
   border: none;
 }
-
 ul:hover {
   background-color: rgba(255, 255, 255, 0.7);
 }
